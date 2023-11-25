@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Today -->
+    <TextView
+        android:id="@+id/textViewToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘 (Today)"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Number for Today -->
+    <TextView
+        android:id="@+id/textViewTodayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_below="@id/textViewToday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Yesterday -->
+    <TextView
+        android:id="@+id/textViewYesterday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="어제 (Yesterday)"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewTodayNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Number for Yesterday -->
+    <TextView
+        android:id="@+id/textViewYesterdayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_below="@id/textViewYesterday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewYesterdayNumber"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp">
+
+        <!-- 그저께 -->
+        <TextView
+            android:id="@+id/textViewBeforeYesterday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="그저께: "
+            android:layout_marginLeft="100px"
+            android:textSize="12sp"
+
+            />
+
+        <!-- Number for 그저께 -->
+        <TextView
+            android:id="@+id/textViewBeforeYesterdayNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            android:layout_toEndOf="@id/textViewBeforeYesterday"
+            android:layout_marginStart="4dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
